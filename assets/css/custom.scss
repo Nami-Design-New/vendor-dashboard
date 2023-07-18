@@ -7,7 +7,7 @@
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background-color:  var(--bs-card-bg);
+  background-color: var(--bs-card-bg);
 }
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(
@@ -61,6 +61,9 @@ div.dataTables_wrapper div.dataTables_filter {
   outline: none;
   border: none;
 }
+.menu-open {
+  padding: 0 1rem !important;
+}
 footer {
   padding: 2.5rem 2.5rem 0;
 }
@@ -98,6 +101,20 @@ footer {
     }
   }
 }
+@media (max-width: 414px) {
+  .header-wrap {
+    height: 160px;
+    .vendor-avatar {
+      width: 100px;
+      height: 100px;
+      right: 50px;
+      bottom: -50px;
+      img {
+        max-height: 50px;
+      }
+    }
+  }
+}
 .analatics-wrap {
   width: 100%;
   padding: 94px 1.5rem 0;
@@ -116,7 +133,7 @@ footer {
       box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
       padding: 1.25rem;
       border-radius: 8px;
-      background:  var(--bs-card-bg);
+      background: var(--bs-card-bg);
       .text {
         h4 {
           font-size: 16px;
@@ -167,6 +184,12 @@ footer {
         }
       }
     }
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 .charts-area {
@@ -175,6 +198,10 @@ footer {
   .row {
     padding: 0 12px;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 24px;
+    }
     .card {
       height: fit-content;
     }
@@ -184,6 +211,9 @@ footer {
       flex-direction: column;
       gap: 32px;
       padding: 0;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
       .card {
         width: 100%;
       }
@@ -191,8 +221,11 @@ footer {
     .card {
       width: calc(50% - 16px);
       padding: 1.5rem;
-      background:  var(--bs-card-bg);
+      background: var(--bs-card-bg);
       box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
+      @media (max-width: 768px) {
+        width: 100%;
+      }
       .chart-head {
         width: 100%;
         display: flex;
@@ -244,7 +277,7 @@ footer {
   .head-title {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin: 4rem 0 2rem;
   }
   .card {
     background: #fff;
@@ -338,25 +371,13 @@ footer {
     width: 60px !important;
     height: 60px !important;
     border-radius: 50%;
-    // position: relative;
     img {
       border-radius: 50%;
     }
-    // &::before {
-    //   content: " ";
-    //   width: 12px;
-    //   height: 12px;
-    //   border-radius: 50%;
-    //   position: absolute;
-    //   right: 4px;
-    //   bottom: 0;
-    //   background: #a1f449;
-    //   border: 1px solid #fff;
-    // }
   }
   .head-title {
     font-size: 24px;
-    margin-bottom: 2.5rem;
+    margin: 4rem 0 2rem;;
   }
   .card {
     background: #fff;
@@ -424,7 +445,6 @@ footer {
     }
   }
 }
-
 #addNewEmployee {
   .modal-header {
     display: -webkit-box;
