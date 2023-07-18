@@ -37,8 +37,6 @@
     <script src="../../assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../../assets/js/config.js"></script>
-    <!-- dropify -->
-    <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
 </head>
 
 <body>
@@ -173,51 +171,37 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
                     <!-- Content -->
-                    <div class="container-xxl flex-grow-1 profile-section">
-                        <h2 class="head-title">Update personal profile informations</h2>
-                        <div class="row justify-content-center">
-                            <div class="card col-lg-10 col-12">
-                                <form action="">
-                                    <div class="form-group">
-                                        <div class="input-field">
-                                            <label for="fullName">Full Name*</label>
-                                            <input type="text" id="fullName" name="name" value="Admin"
-                                                placeholder="Enter your name" required>
-                                        </div>
-                                        <div class="input-field">
-                                            <label for="email">Email Address*</label>
-                                            <input type="email" id="email" name="email" value="admin@admin.com"
-                                                placeholder="Enter valid email" required>
-                                        </div>
-                                        <div class="input-field">
-                                            <label for="password">New Password*</label>
-                                            <div class="input-group5">
-                                                <input class="pass" type="password" id="password" name="password"
-                                                    placeholder="..........." required>
-                                                <span class="password-show">
-                                                    <i class="fa-sharp fa-regular fa-eye-slash"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="input-field">
-                                            <label for="confirmPassword">Confirm Password*</label>
-                                            <div class="input-group5">
-                                                <input class="pass" type="password" id="confirmPassword" name="password"
-                                                    placeholder="..........." required>
-                                                <span class="password-show">
-                                                    <i class="fa-sharp fa-regular fa-eye-slash"></i>
-                                                </span>
-                                            </div>
-                                        </div>
+                    <div class="container-xxl flex-grow-1 section-all">
+                        <h2 class="head-title">Notifications <i class="fa-sharp fa-solid fa-bell"></i></h2>
+                        <div class="card">
+                            <div class="row justify-content-center">
+                                <div class="col-11 d-flex gap-5 notify-row">
+                                    <div class="avatar rounded">
+                                        <img src="assets/img/avatars/4.png" alt="" onclick="window.open(this.src)" />
                                     </div>
-                                    <div class="image-change">
-                                        <h3>Personal Picture</h3>
-                                        <div class="image-container">
-                                            <input name="file1" type="file" class="dropify" data-height="110" />
-                                        </div>
+                                    <div class="describtion">
+                                        <p class="m-0"><b>Zahraa Ali</b> new reqruitment request</p>
+                                        <span>2h - ago - Requests</span>
                                     </div>
-                                    <button type="submit">Save</button>
-                                </form>
+                                </div>
+                                <div class="col-11 d-flex gap-5 notify-row">
+                                    <div class="avatar rounded">
+                                        <img src="assets/img/avatars/2.png" alt="" onclick="window.open(this.src)" />
+                                    </div>
+                                    <div class="describtion">
+                                        <p class="m-0"><b>Esraa Salmon</b> new reqruitment request</p>
+                                        <span>2h - ago - Requests</span>
+                                    </div>
+                                </div>
+                                <div class="col-11 d-flex gap-5 notify-row">
+                                    <div class="avatar rounded">
+                                        <img src="assets/img/avatars/1.png" alt="" onclick="window.open(this.src)" />
+                                    </div>
+                                    <div class="describtion">
+                                        <p class="m-0"><b>Ahmed Ibrahim</b> new reqruitment request</p>
+                                        <span>2h - ago - Requests</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -277,25 +261,6 @@
     <script src="assets/js/main.js"></script>
     <!-- Page JS -->
     <script src="assets/js/dashboards-analytics.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
-    <script>
-        $('.dropify').dropify();
-        showHideBtns = document.querySelectorAll(".password-show");
-        passInputs = document.querySelectorAll(".pass");
-        for (let i = 0; i < showHideBtns.length; i++) {
-            showHideBtns[i].addEventListener("click", () => {
-                if (passInputs[i].type === "password") {
-                    passInputs[i].setAttribute('type', 'text');
-                    showHideBtns[i].querySelector("i").classList = "fa-regular fa-eye";
-                } else {
-                    passInputs[i].setAttribute('type', 'password');
-                    showHideBtns[i].querySelector("i").classList = "fa-sharp fa-regular fa-eye-slash";
-                }
-            })
-        }
-    </script>
 </body>
 
 </html>
-<!-- beautify ignore:end -->
