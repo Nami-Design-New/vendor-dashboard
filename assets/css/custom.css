@@ -61,6 +61,19 @@
   display: none !important;
 }
 
+div.dataTables_wrapper div.dataTables_filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dt-button {
+  padding: 0.5rem 1rem;
+  background: #f8f7fa;
+  outline: none;
+  border: none;
+}
+
 footer {
   padding: 2.5rem 2.5rem 0;
 }
@@ -113,7 +126,7 @@ footer {
   box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
   padding: 1.25rem;
   border-radius: 8px;
-  background: #f8f7fa;
+  background: #fff;
 }
 .analatics-wrap .analatics-cards .analatic-card .text h4 {
   font-size: 16px;
@@ -178,7 +191,7 @@ footer {
 .charts-area .row .card {
   width: calc(50% - 16px);
   padding: 1.5rem;
-  background: #f8f7fa;
+  background: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
 }
 .charts-area .row .card .chart-head {
@@ -213,7 +226,7 @@ footer {
 }
 .Staff-stats .row .card {
   padding: 2.5rem 1.5rem;
-  background: #f8f7fa;
+  background: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
 }
 
@@ -230,7 +243,7 @@ footer {
   margin-bottom: 2.5rem;
 }
 .profile-section .card {
-  background: #f8f7fa;
+  background: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
   padding: 2rem;
 }
@@ -300,117 +313,72 @@ footer {
   background-color: #685dd8 !important;
 }
 
-.employees-section,
-.clients-section,
-.Cvs-section {
+.section-all {
   padding: 2.5rem !important;
 }
-.employees-section .head-title,
-.clients-section .head-title,
-.Cvs-section .head-title {
+.section-all .head-title {
   font-size: 24px;
   margin-bottom: 2.5rem;
 }
-.employees-section .card,
-.clients-section .card,
-.Cvs-section .card {
-  background: #f8f7fa;
+.section-all .card {
+  background: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
   padding: 2rem;
 }
-.employees-section .card .addemp,
-.clients-section .card .addemp,
-.Cvs-section .card .addemp {
+.section-all .card .addemp {
   width: 100%;
 }
-.employees-section .card .addemp .addemployeeopenmodel,
-.clients-section .card .addemp .addemployeeopenmodel,
-.Cvs-section .card .addemp .addemployeeopenmodel {
+.section-all .card .addemp .addemployeeopenmodel {
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
   color: #fff;
   color: #fff;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   background-color: #7367f0;
   box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
 }
-.employees-section .card .addemp .addemployeeopenmodel:hover,
-.clients-section .card .addemp .addemployeeopenmodel:hover,
-.Cvs-section .card .addemp .addemployeeopenmodel:hover {
+.section-all .card .addemp .addemployeeopenmodel:hover {
   background-color: #685dd8 !important;
 }
-.employees-section .card table .status,
-.clients-section .card table .status,
-.Cvs-section .card table .status {
+.section-all .card table .status {
   background: #685dd8;
   padding: 0.25rem;
   border-radius: 4px;
   color: #fff;
   font-size: 12px;
 }
-.employees-section .card table .form-check-input,
-.clients-section .card table .form-check-input,
-.Cvs-section .card table .form-check-input {
+.section-all .card table .form-check-input {
   width: 16px;
   height: 16px;
 }
-.employees-section .card table button,
-.clients-section .card table button,
-.Cvs-section .card table button {
+.section-all .card table button,
+.section-all .card table .d-btn {
   margin: 0 !important;
   padding: 0.5rem;
   border: none;
   color: #fff;
 }
-.employees-section .card table button.delete,
-.clients-section .card table button.delete,
-.Cvs-section .card table button.delete {
-  background: #e94848 !important;
+.section-all .card table button.delete i,
+.section-all .card table .d-btn.delete i {
+  color: #ff0000;
 }
-.employees-section .card table button.delete:hover,
-.clients-section .card table button.delete:hover,
-.Cvs-section .card table button.delete:hover {
-  background-color: #d73838 !important;
+.section-all .card table button.editButton i,
+.section-all .card table .d-btn.editButton i {
+  color: #afacb8;
 }
-.employees-section .card table button.editButton,
-.clients-section .card table button.editButton,
-.Cvs-section .card table button.editButton {
-  background: #a7fe4d !important;
+.section-all .card table button.activate-btn i,
+.section-all .card table .d-btn.activate-btn i {
+  color: #7367f0;
 }
-.employees-section .card table button.editButton:hover,
-.clients-section .card table button.editButton:hover,
-.Cvs-section .card table button.editButton:hover {
-  background-color: #a1f449 !important;
+.section-all .card table button.reserve,
+.section-all .card table .d-btn.reserve {
+  color: #a1f449;
 }
-.employees-section .card table button.activate-btn,
-.clients-section .card table button.activate-btn,
-.Cvs-section .card table button.activate-btn {
-  background: #7367f0 !important;
-}
-.employees-section .card table button.activate-btn:hover,
-.clients-section .card table button.activate-btn:hover,
-.Cvs-section .card table button.activate-btn:hover {
-  background-color: #685dd8 !important;
-}
-.employees-section .card table button.reserve,
-.clients-section .card table button.reserve,
-.Cvs-section .card table button.reserve {
-  background: #34c38f !important;
-}
-.employees-section .card table button.reserve:hover,
-.clients-section .card table button.reserve:hover,
-.Cvs-section .card table button.reserve:hover {
-  background-color: #19a270 !important;
-}
-.employees-section .card table a,
-.clients-section .card table a,
-.Cvs-section .card table a {
+.section-all .card table a {
   color: #6f6b7d;
 }
-.employees-section .card table .whats-link,
-.clients-section .card table .whats-link,
-.Cvs-section .card table .whats-link {
+.section-all .card table .whats-link {
   font-size: 24px;
 }
 

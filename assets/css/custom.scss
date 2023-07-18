@@ -50,6 +50,17 @@
 .apexcharts-menu-icon {
   display: none !important;
 }
+div.dataTables_wrapper div.dataTables_filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dt-button {
+  padding: .5rem 1rem;
+  background: #f8f7fa;
+  outline: none;
+  border: none;
+}
 footer {
   padding: 2.5rem 2.5rem 0;
 }
@@ -103,7 +114,7 @@ footer {
       box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
       padding: 1.25rem;
       border-radius: 8px;
-      background: #f8f7fa;
+      background: #fff;
       .text {
         h4 {
           font-size: 16px;
@@ -178,7 +189,7 @@ footer {
     .card {
       width: calc(50% - 16px);
       padding: 1.5rem;
-      background: #f8f7fa;
+      background: #fff;
       box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
       .chart-head {
         width: 100%;
@@ -218,7 +229,7 @@ footer {
     padding: 0 12px;
     .card {
       padding: 2.5rem 1.5rem;
-      background: #f8f7fa;
+      background: #fff;
       box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
     }
   }
@@ -234,7 +245,7 @@ footer {
     margin-bottom: 2.5rem;
   }
   .card {
-    background: #f8f7fa;
+    background: #fff;
     box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
     padding: 2rem;
     form {
@@ -306,16 +317,14 @@ footer {
     }
   }
 }
-.employees-section,
-.clients-section,
-.Cvs-section {
+.section-all {
   padding: 2.5rem !important;
   .head-title {
     font-size: 24px;
     margin-bottom: 2.5rem;
   }
   .card {
-    background: #f8f7fa;
+    background: #fff;
     box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
     padding: 2rem;
     .addemp {
@@ -326,7 +335,7 @@ footer {
         border-radius: 4px;
         color: #fff;
         color: #fff;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1rem;
         background-color: #7367f0;
         box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
         &:hover {
@@ -346,34 +355,30 @@ footer {
         width: 16px;
         height: 16px;
       }
-      button {
+
+      button,
+      .d-btn {
         margin: 0 !important;
         padding: .5rem;
         border: none;
         color: #fff;
         &.delete {
-          background: #e94848 !important;
-          &:hover {
-            background-color: #d73838 !important;
+          i {
+            color: #ff0000;
           }
         }
         &.editButton {
-          background: #a7fe4d !important;
-          &:hover {
-            background-color: #a1f449 !important;
+          i {
+            color: #afacb8;
           }
         }
         &.activate-btn {
-          background: #7367f0 !important;
-          &:hover {
-            background-color: #685dd8 !important;
+          i {
+            color: #7367f0;
           }
         }
         &.reserve {
-          background: #34c38f !important;
-          &:hover {
-            background-color: #19a270 !important;
-          }
+          color: #a1f449
         }
       }
       a {

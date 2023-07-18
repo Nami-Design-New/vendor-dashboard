@@ -31,14 +31,12 @@
     <link rel="stylesheet" href="assets/vendor/css/pages/cards-advance.css" />
     <link rel="stylesheet" href="assets/css/custom.css">
     <!-- Helpers -->
-    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="../../assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
-    <script src="assets/vendor/js/template-customizer.js"></script>
+    <script src="../../assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="assets/js/config.js"></script>
-    <!-- dropify -->
-    <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
+    <script src="../../assets/js/config.js"></script>
 </head>
 
 <body>
@@ -112,6 +110,11 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
+                                    <a href="skills.html" class="menu-link">
+                                        <div class="subnav-div">Skills</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
                                     <a href="marital-status.html" class="menu-link">
                                         <div class="subnav-div">Marital status</div>
                                     </a>
@@ -177,11 +180,11 @@
                 <div class="content-wrapper">
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 section-all">
-                        <h2 class="head-title">Moderators</h2>
+                        <h2 class="head-title">Skills</h2>
                         <div class="card">
                             <div class="addemp">
                                 <a href="#!" class="btn addemployeeopenmodel" data-bs-toggle="modal"
-                                    data-bs-target="#addNewEmployee">Add Employee</a>
+                                    data-bs-target="#addNewEmployee">Add New</a>
                                 <div id="Datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                                     <div id="Datatable_filter" class="dataTables_filter">
                                         <label>search:
@@ -203,11 +206,7 @@
                                                             style=" width: 50% !important;height: 50% !important;"></i>
                                                     </a>
                                                 </th>
-                                                <th>Image</th>
-                                                <th>Name</th>
-                                                <th>Email Address</th>
-                                                <th>Whatsapp</th>
-                                                <th>Phone Number</th>
+                                                <th>Skill</th>
                                                 <th>Add Date</th>
                                                 <th>Actions</th>
                                             </tr>
@@ -218,31 +217,15 @@
                                                     <input type="checkbox" class=" delete-all form-check-input"
                                                         data-tablesaw-checkall name="delete_all" id="21">
                                                 </td>
-                                                <td>
-                                                    <img src="assets/img/avatars/2.png" class="rounded"
-                                                        style="height:60px;width:60px" onclick="window.open(this.src)">
-                                                </td>
-                                                <td>Nora Al-Sahli</td>
-                                                <td>example@admin.com</td>
-                                                <td>
-                                                    <a class="d-flex justify-content-center align-items-center"
-                                                        href="https://api.whatsapp.com/">
-                                                        <i class="whats-link fa-brands fa-whatsapp"></i>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="tel:01123212120">01123212120</a>
-                                                </td>
+                                                <td>Child rearing</td>
                                                 <td>18/7/2022</td>
                                                 <td>
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <button class="btn editButton">
-                                                            <i class="fa-regular fa-pen-to-square"></i>
-                                                        </button>
-                                                        <button class="btn delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </button>
-                                                    </div>
+                                                    <button class="btn editButton">
+                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                    </button>
+                                                    <button class="btn delete">
+                                                        <i class="fa-regular fa-trash"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -250,31 +233,15 @@
                                                     <input type="checkbox" class=" delete-all form-check-input"
                                                         data-tablesaw-checkall name="delete_all" id="21">
                                                 </td>
+                                                <td>Infant care</td>
+                                                <td>15/7/20023</td>
                                                 <td>
-                                                    <img src="assets/img/avatars/3.png" class="rounded"
-                                                        style="height:60px;width:60px" onclick="window.open(this.src)">
-                                                </td>
-                                                <td>Nora Al-Sahli</td>
-                                                <td>example@admin.com</td>
-                                                <td>
-                                                    <a class="d-flex justify-content-center align-items-center"
-                                                        href="https://api.whatsapp.com/">
-                                                        <i class="whats-link fa-brands fa-whatsapp"></i>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="tel:01123212120">01123212120</a>
-                                                </td>
-                                                <td>18/7/2022</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <button class="btn  editButton">
-                                                            <i class="fa-regular fa-pen-to-square"></i>
-                                                        </button>
-                                                        <button class="btn   delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </button>
-                                                    </div>
+                                                    <button class="btn editButton">
+                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                    </button>
+                                                    <button class="btn delete">
+                                                        <i class="fa-regular fa-trash"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -282,31 +249,15 @@
                                                     <input type="checkbox" class=" delete-all form-check-input"
                                                         data-tablesaw-checkall name="delete_all" id="21">
                                                 </td>
+                                                <td>Cooking</td>
+                                                <td>15/7/20023</td>
                                                 <td>
-                                                    <img src="assets/img/avatars/4.png" class="rounded"
-                                                        style="height:60px;width:60px" onclick="window.open(this.src)">
-                                                </td>
-                                                <td>Nora Al-Sahli</td>
-                                                <td>example@admin.com</td>
-                                                <td>
-                                                    <a class="d-flex justify-content-center align-items-center"
-                                                        href="https://api.whatsapp.com/">
-                                                        <i class="whats-link fa-brands fa-whatsapp"></i>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="tel:01123212120">01123212120</a>
-                                                </td>
-                                                <td>18/7/2022</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <button class="btn  editButton">
-                                                            <i class="fa-regular fa-pen-to-square"></i>
-                                                        </button>
-                                                        <button class="btn   delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </button>
-                                                    </div>
+                                                    <button class="btn editButton">
+                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                    </button>
+                                                    <button class="btn delete">
+                                                        <i class="fa-regular fa-trash"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -314,31 +265,31 @@
                                                     <input type="checkbox" class=" delete-all form-check-input"
                                                         data-tablesaw-checkall name="delete_all" id="21">
                                                 </td>
+                                                <td>the laundry</td>
+                                                <td>15/7/20023</td>
                                                 <td>
-                                                    <img src="assets/img/avatars/12.png" class="rounded"
-                                                        style="height:60px;width:60px" onclick="window.open(this.src)">
+                                                    <button class="btn editButton">
+                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                    </button>
+                                                    <button class="btn delete">
+                                                        <i class="fa-regular fa-trash"></i>
+                                                    </button>
                                                 </td>
-                                                <td>Nora Al-Sahli</td>
-                                                <td>example@admin.com</td>
-                                                <td>
-                                                    <a class="d-flex justify-content-center align-items-center"
-                                                        href="https://api.whatsapp.com/">
-                                                        <i class="whats-link fa-brands fa-whatsapp"></i>
-                                                    </a>
+                                            </tr>
+                                            <tr>
+                                                <td class="dtr-control">
+                                                    <input type="checkbox" class=" delete-all form-check-input"
+                                                        data-tablesaw-checkall name="delete_all" id="21">
                                                 </td>
+                                                <td>ironer</td>
+                                                <td>15/7/20023</td>
                                                 <td>
-                                                    <a href="tel:01123212120">01123212120</a>
-                                                </td>
-                                                <td>18/7/2022</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <button class="btn  editButton">
-                                                            <i class="fa-regular fa-pen-to-square"></i>
-                                                        </button>
-                                                        <button class="btn   delete">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </button>
-                                                    </div>
+                                                    <button class="btn editButton">
+                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                    </button>
+                                                    <button class="btn delete">
+                                                        <i class="fa-regular fa-trash"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -346,7 +297,7 @@
                                     <div id="Datatable_processing" class="dataTables_processing card"
                                         style="display: none;">Loading</div>
                                     <div class="dataTables_info" id="Datatable_info" role="status" aria-live="polite">
-                                        Showing 1 to 2 of 2
+                                        Showing 1 to 5 of 5
                                         records</div>
                                     <div class="dataTables_paginate paging_simple_numbers" id="Datatable_paginate">
                                         <ul class="pagination">
@@ -407,62 +358,33 @@
         <div class="drag-target"></div>
     </div>
     <!-- / Layout wrapper -->
-    <!-- add new model -->
+    <!-- Core JS -->
     <div class="modal fade" id="addNewEmployee" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h6 class="modal-title"> Add a new moderator </h6>
+                    <h6 class="modal-title">Add a new skill</h6>
                     <button type="button" data-bs-dismiss="modal" aria-label="Close">
                         <i class="fa-sharp fa-regular fa-xmark"></i>
                     </button>
                 </div>
                 <div class="modal-body ">
                     <form action="">
-                        <div class="image-change">
-                            <h3>Picture</h3>
-                            <div class="image-container">
-                                <input name="file1" type="file" class="dropify" data-height="100" />
-                            </div>
-                        </div>
                         <div class="form-group">
                             <div class="input-field">
-                                <label for="fullName">Name*</label>
-                                <input type="text" id="fullName" name="name" placeholder="Enter your name" required>
-                            </div>
-                            <div class="input-field">
-                                <label for="email">Email Address*</label>
-                                <input type="email" id="email" name="email" placeholder="Enter valid email" required>
-                            </div>
-                            <div class="input-field">
-                                <label for="phone">Phone Number*</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
-                            </div>
-                            <div class="input-field">
-                                <label for="whatsapp">Whatsapp*</label>
-                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Enter whatsapp number"
-                                    required>
-                            </div>
-                            <div class="input-field">
-                                <label for="password">Password*</label>
-                                <input class="pass" type="password" id="password" name="password"
-                                    placeholder="..........." required>
-                            </div>
-                            <div class="input-field">
-                                <label>Job Type*</label>
-                                <select name="employee-type" id="">
-                                    <option value="0" selected>Manager</option>
-                                    <option value="1">customers service</option>
-                                </select>
+                                <label for="skill">Skill*</label>
+                                <input type="text" id="skill" name="skill"
+                                    placeholder="Enter new skill" required>
                             </div>
                         </div>
-                        <button type="submit">Save</button>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit">Save</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="assets/vendor/libs/jquery/jquery.js"></script>
     <script src="assets/vendor/libs/popper/popper.js"></script>
@@ -482,11 +404,6 @@
     <script src="assets/js/main.js"></script>
     <!-- Page JS -->
     <script src="assets/js/dashboards-analytics.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
-    <script>
-        $('.dropify').dropify();
-    </script>
 </body>
 
 </html>
