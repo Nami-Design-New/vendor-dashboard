@@ -280,7 +280,7 @@ footer {
     margin: 4rem 0 2rem;
   }
   .card {
-    background: #fff;
+    background: var(--bs-card-bg);
     box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
     padding: 2rem;
     form {
@@ -377,10 +377,10 @@ footer {
   }
   .head-title {
     font-size: 24px;
-    margin: 4rem 0 2rem;;
+    margin: 4rem 0 2rem;
   }
   .card {
-    background: #fff;
+    background: var(--bs-card-bg);
     box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
     padding: 2rem;
     .addemp {
