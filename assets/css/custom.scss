@@ -73,7 +73,7 @@ footer {
   height: 200px;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 50% 40%;
+  background-position: 50% 90%;
   background-image: linear-gradient(
       45deg,
       rgba(115, 103, 240, .25),
@@ -99,6 +99,20 @@ footer {
       max-height: 70px;
       filter: grayscale(1);
     }
+  }
+}
+.user-wrapper {
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  img {
+    opacity: .3;
+    filter: grayscale(1);
+    max-width: 50%;
   }
 }
 @media (max-width: 414px) {
@@ -342,13 +356,16 @@ footer {
         outline: none;
         border: none;
         border-radius: 4px;
-        margin-top: 2rem;
+
         color: #fff;
         background-color: #7367f0;
         box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
         &:hover {
           color: #fff !important;
           background-color: #685dd8 !important;
+        }
+        @media (max-width: 414px) {
+          margin-top: 2rem;
         }
       }
     }
