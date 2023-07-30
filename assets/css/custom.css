@@ -89,7 +89,7 @@ footer {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 90%;
-  background-image: linear-gradient(45deg, rgba(115, 103, 240, 0.25), rgba(115, 103, 240, 0.7)), url("../img/backgrounds/s2.webp");
+  background-image: linear-gradient(45deg, rgba(115, 103, 240, 0.25), rgba(115, 103, 240, 0.7)), url("../img/backgrounds/skyscrapers-palm-trees-dubai-uae.jpg");
   border-radius: 12px;
   margin-bottom: 96px;
 }
@@ -144,6 +144,11 @@ footer {
 .analatics-wrap {
   width: 100%;
   padding: 94px 1.5rem 0;
+}
+@media (max-width: 576px) {
+  .analatics-wrap {
+    padding: 94px 12px 0;
+  }
 }
 .analatics-wrap h2 {
   font-size: 20px;
@@ -385,7 +390,7 @@ footer {
 }
 @media (max-width: 414px) {
   .section-all {
-    padding: 2.5rem 1.5rem !important;
+    padding: 2.5rem 12px !important;
   }
 }
 .section-all .notify-row {

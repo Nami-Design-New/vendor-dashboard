@@ -79,7 +79,7 @@ footer {
       rgba(115, 103, 240, .25),
       rgba(115, 103, 240, 0.7)
     ),
-    url("../img/backgrounds/s2.webp");
+    url("../img/backgrounds/skyscrapers-palm-trees-dubai-uae.jpg");
   border-radius: 12px;
   margin-bottom: 96px;
   .vendor-avatar {
@@ -132,6 +132,9 @@ footer {
 .analatics-wrap {
   width: 100%;
   padding: 94px 1.5rem 0;
+  @media (max-width: 576px) {
+    padding: 94px 12px 0;
+  }
   h2 {
     font-size: 20px;
     margin-bottom: 32px;
@@ -373,7 +376,7 @@ footer {
 .section-all {
   padding: 2.5rem !important;
   @media (max-width: 414px) {
-    padding: 2.5rem 1.5rem !important;
+    padding: 2.5rem 12px !important;
   }
   .notify-row {
     border-bottom: 1px solid #eff2f7;
